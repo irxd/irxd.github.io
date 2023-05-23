@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>irxd</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="trunk"></div>
+    <div class="marquee">
+      <span>
+        &nbsp; / &nbsp; work in progress &nbsp; / &nbsp; work in progress
+      </span>
+      <span>
+        &nbsp; / &nbsp; work in progress &nbsp; / &nbsp; work in progress
+      </span>
+      <span>
+        &nbsp; / &nbsp; work in progress &nbsp; / &nbsp; work in progress
+      </span>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
+  <script>
+  VANTA.TRUNK({
+    el: "#trunk",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0xd7d7d7,
+    backgroundColor: 0x202020,
+    spacing: 8.00,
+    chaos: 7.00
+  })
+  </script>
+</html>

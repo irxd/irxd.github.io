@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Formula Condensed";
+  src: url("/fonts/formula_condensed.woff2") format("woff2"),
+    url("/fonts/formula_condensed.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#trunk {
+  height: 500px;
+  width: 100vw;
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #202020;
+  display: flex;
+  align-items: center;
+}
+
+.marquee span {
+  font-family: "Formula Condensed";
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #d7d7d7;
+  font-size: 4em;
+  text-transform: uppercase;
+  padding-left: -10%;
+  animation: marquee-animation 10s linear infinite;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
