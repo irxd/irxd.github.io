@@ -16,6 +16,16 @@ body {
   width: 100vw;
 }
 
+a {
+  font-family: "Formula Condensed";
+  text-decoration: underline;
+  color: #202020
+}
+
+.blog-link-wrapper {
+  margin: 8px;
+}
+
 .marquee {
   position: relative;
   width: 100vw;
