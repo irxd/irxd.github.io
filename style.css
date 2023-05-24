@@ -23,7 +23,15 @@ a {
 }
 
 .blog-link-wrapper {
-  margin: 8px;
+  margin: 16px;
+  padding-top: 8px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.scramble {
+  margin-top: 8px;
 }
 
 .marquee {
