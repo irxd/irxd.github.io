@@ -3,12 +3,8 @@
  * https://greensock.com
  * 
  * @license Copyright 2023, GreenSock. All rights reserved.
- * *** DO NOT DEPLOY THIS FILE ***
- * This is a trial version that only works locally and on domains like codepen.io and codesandbox.io.
- * Loading it on an unauthorized domain violates the license and will cause a redirect.
- * Get the unrestricted file by joining Club GreenSock at https://greensock.com/club
- * @author: Jack Doyle, jack@greensock.com
  */
+
 ! function(D, u) {
   "object" == typeof exports && "undefined" != typeof module ? u(exports) : "function" == typeof define && define.amd ? define(["exports"], u) : u((D = D || self).window = D.window || {})
 }(this, function(D) {
@@ -45,35 +41,11 @@
       return E || "undefined" != typeof window && (E = window.gsap) && E.registerPlugin && E
   }
 
-  function l() {
-      return String.fromCharCode.apply(null, arguments)
-  }
-
   function u() {
       s = E = i()
   }
-  var E, s, t = "ScrambleTextPlugin",
-      n = l(103, 114, 101, 101, 110, 115, 111, 99, 107, 46, 99, 111, 109),
-      B = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}:?\d*$/,
-      A = function(D) {
-          var u = "undefined" != typeof window,
-              // F = 0 === (u ? window.location.href : "").indexOf(l(102, 105, 108, 101, 58, 47, 47)) || -1 !== D.indexOf(l(108, 111, 99, 97, 108, 104, 111, 115, 116)) || B.test(D),
-              C = [n, l(99, 111, 100, 101, 112, 101, 110, 46, 105, 111), l(99, 111, 100, 101, 112, 101, 110, 46, 112, 108, 117, 109, 98, 105, 110, 103), l(99, 111, 100, 101, 112, 101, 110, 46, 100, 101, 118), l(99, 111, 100, 101, 112, 101, 110, 46, 97, 112, 112), l(99, 111, 100, 101, 112, 101, 110, 46, 119, 101, 98, 115, 105, 116, 101), l(112, 101, 110, 115, 46, 99, 108, 111, 117, 100), l(99, 115, 115, 45, 116, 114, 105, 99, 107, 115, 46, 99, 111, 109), l(99, 100, 112, 110, 46, 105, 111), l(112, 101, 110, 115, 46, 105, 111), l(103, 97, 110, 110, 111, 110, 46, 116, 118), l(99, 111, 100, 101, 99, 97, 110, 121, 111, 110, 46, 110, 101, 116), l(116, 104, 101, 109, 101, 102, 111, 114, 101, 115, 116, 46, 110, 101, 116), l(99, 101, 114, 101, 98, 114, 97, 120, 46, 99, 111, 46, 117, 107), l(116, 121, 109, 112, 97, 110, 117, 115, 46, 110, 101, 116), l(116, 119, 101, 101, 110, 109, 97, 120, 46, 99, 111, 109), l(112, 108, 110, 107, 114, 46, 99, 111), l(104, 111, 116, 106, 97, 114, 46, 99, 111, 109), l(119, 101, 98, 112, 97, 99, 107, 98, 105, 110, 46, 99, 111, 109), l(97, 114, 99, 104, 105, 118, 101, 46, 111, 114, 103), l(99, 111, 100, 101, 115, 97, 110, 100, 98, 111, 120, 46, 105, 111), l(99, 115, 98, 46, 97, 112, 112), l(115, 116, 97, 99, 107, 98, 108, 105, 116, 122, 46, 99, 111, 109), l(115, 116, 97, 99, 107, 98, 108, 105, 116, 122, 46, 105, 111), l(99, 111, 100, 105, 101, 114, 46, 105, 111), l(109, 111, 116, 105, 111, 110, 116, 114, 105, 99, 107, 115, 46, 99, 111, 109), l(115, 116, 97, 99, 107, 111, 118, 101, 114, 102, 108, 111, 119, 46, 99, 111, 109), l(115, 116, 97, 99, 107, 101, 120, 99, 104, 97, 110, 103, 101, 46, 99, 111, 109), l(115, 116, 117, 100, 105, 111, 102, 114, 101, 105, 103, 104, 116, 46, 99, 111, 109), l(119, 101, 98, 99, 111, 110, 116, 97, 105, 110, 101, 114, 46, 105, 111), l(118, 101, 114, 99, 101, 108, 46, 97, 112, 112), l(110, 101, 116, 108, 105, 102, 121, 46, 97, 112, 112), l(106, 115, 102, 105, 100, 100, 108, 101, 46, 110, 101, 116)],
-              e = C.length;
-          for (setTimeout(function checkWarn() {
-                  if (u)
-                      if ("loading" === document.readyState || "interactive" === document.readyState) document.addEventListener("readystatechange", checkWarn);
-                      else {
-                          document.removeEventListener("readystatechange", checkWarn);
-                          // var D = "object" == typeof E ? E : u && window.gsap;
-                      }
-              }, 50); - 1 < --e;)
-              if (-1 !== D.indexOf(C[e])) return !0;
-          // return F || !setTimeout(function() {
-          //     u && (window.location.href = l(104, 116, 116, 112, 115, 58, 47, 47) + n + l(47, 114, 101, 113, 117, 105, 114, 101, 115, 45, 109, 101, 109, 98, 101, 114, 115, 104, 105, 112, 47) + "?plugin=" + t + "&source=trial")
-          // }, 4e3)
-          return true
-      }("undefined" != typeof window ? window.location.host : ""),
+  var E, s = "ScrambleTextPlugin",
+      A = true,
       h = /\s+/g,
       F = function _scrambleText(D, u) {
           for (var F = u.length, C = ""; - 1 < --D;) C += u[~~(Math.random() * F)];
