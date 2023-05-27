@@ -68,3 +68,21 @@ scrambleLinkedin.forEach(item => {
     tween.reverse();
   });
 });
+
+const scrambleExperiment = gsap.utils.toArray('.experiment');
+scrambleExperiment.forEach(item => {
+  let tween = gsap.to(item, {
+    duration: 1,
+    scrambleText:{
+      text:"実験的な",
+      chars:"ゴギオセ"
+    },
+    paused: true
+  });
+  item.addEventListener('mouseenter', () => {
+    tween.play();
+  });
+  item.addEventListener("mouseleave", () => {
+    tween.reverse();
+  });
+});
