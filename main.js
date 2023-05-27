@@ -21,7 +21,7 @@ scrambleRead.forEach(item => {
     duration: 1,
     scrambleText:{
       text:"読む",
-      chars:"ボゼ"
+      chars:"読む"
     },
     paused: true
   });
@@ -39,7 +39,7 @@ scrambleGithub.forEach(item => {
     duration: 1,
     scrambleText:{
       text:"ギットハブ",
-      chars:"ギトロユプ"
+      chars:"ギットハブ"
     },
     paused: true
   });
@@ -57,7 +57,7 @@ scrambleLinkedin.forEach(item => {
     duration: 1,
     scrambleText:{
       text:"リンクイン",
-      chars:"ウビロミャ"
+      chars:"リンクイン"
     },
     paused: true
   });
@@ -75,7 +75,7 @@ scrambleExperiment.forEach(item => {
     duration: 1,
     scrambleText:{
       text:"実験的な",
-      chars:"ゴギオセ"
+      chars:"実験的な"
     },
     paused: true
   });
