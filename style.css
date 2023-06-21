@@ -35,33 +35,3 @@ a {
   margin-top: 8px;
   height: 40px;
 }
-
-.marquee {
-  position: relative;
-  width: 100vw;
-  white-space: nowrap;
-  overflow: hidden;
-  background: #202020;
-  display: flex;
-  align-items: center;
-}
-
-.marquee span {
-  font-family: "Formula Condensed";
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #d7d7d7;
-  font-size: 4em;
-  text-transform: uppercase;
-  padding-left: -10%;
-  animation: marquee-animation 15s linear infinite;
-}
-
-@keyframes marquee-animation {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
