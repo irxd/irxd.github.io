@@ -22,7 +22,7 @@ scrambleRead.forEach(item => {
   let tween = gsap.to(item, {
     duration: 1,
     scrambleText:{
-      text:"読む",
+      text:"read",
       chars:"読む"
     },
     paused: true
@@ -40,7 +40,7 @@ scrambleGithub.forEach(item => {
   let tween = gsap.to(item, {
     duration: 1,
     scrambleText:{
-      text:"ギットハブ",
+      text:"github",
       chars:"ギットハブ"
     },
     paused: true
@@ -58,7 +58,7 @@ scrambleLinkedin.forEach(item => {
   let tween = gsap.to(item, {
     duration: 1,
     scrambleText:{
-      text:"リンクイン",
+      text:"linkedin",
       chars:"リンクイン"
     },
     paused: true
@@ -76,7 +76,7 @@ scrambleExperiment.forEach(item => {
   let tween = gsap.to(item, {
     duration: 1,
     scrambleText:{
-      text:"実験的な",
+      text:"experiment",
       chars:"実験的な"
     },
     paused: true
