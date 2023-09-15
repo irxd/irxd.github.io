@@ -71,13 +71,13 @@ scrambleLinkedin.forEach(item => {
   });
 });
 
-const scrambleExperiment = gsap.utils.toArray('.experiment');
-scrambleExperiment.forEach(item => {
+const scrambleProjects= gsap.utils.toArray('.projects');
+scrambleProjects.forEach(item => {
   let tween = gsap.to(item, {
     duration: 1,
     scrambleText:{
-      text:"experiment",
-      chars:"実験的な"
+      text:"projects",
+      chars:"プロジェクト"
     },
     paused: true
   });
