@@ -20,7 +20,7 @@ body {
 a {
   font-family: "Neue Bit";
   font-size: 48px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #d7d7d7;
   padding-top: 8px;
 }
@@ -28,6 +28,7 @@ a {
 a:hover {
   color: #d1fa3d;
   background-color: #202020;
+  text-decoration: underline;
 }
 
 .blog-link-wrapper {
