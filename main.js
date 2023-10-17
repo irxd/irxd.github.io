@@ -23,7 +23,7 @@ scrambleRead.forEach(item => {
     duration: 1,
     scrambleText:{
       text:"read",
-      chars:"読む"
+      chars:"ットハ"
     },
     paused: true
   });
