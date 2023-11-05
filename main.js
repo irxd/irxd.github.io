@@ -11,8 +11,8 @@ VANTA.TRUNK({
   scaleMobile: 1.00,
   color: 0xd7d7d7,
   backgroundColor: 0x202020,
-  spacing: smallScreen.matches ? 4.00 : 8.00,
-  chaos: smallScreen.matches ? 4.00 : 7.00
+  spacing: smallScreen.matches ? 2.00 : 8.00,
+  chaos: smallScreen.matches ? 3.00 : 7.00
 })
 
 gsap.registerPlugin(ScrambleTextPlugin);
