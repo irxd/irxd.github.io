@@ -29,7 +29,8 @@ body {
 .links {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 56px;
+  gap: 20px;
 }
 
 #trunk {
@@ -39,7 +40,7 @@ body {
 
 a {
   font-family: "Neue Bit";
-  font-size: 48px;
+  font-size: 64px;
   text-decoration: none;
   color: #d7d7d7;
   padding-top: 8px;
@@ -54,4 +55,15 @@ a:hover {
 .scramble {
   margin-top: 8px;
   height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+    font-size: 48px;
+  }
+
+  .links {
+    padding-left: 20px;
+    gap: 0;
+  }
 }
